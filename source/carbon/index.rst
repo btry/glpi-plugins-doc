@@ -1,4 +1,4 @@
-Form creator
+Carbon
 ============
 
 .. list-table::
@@ -17,3 +17,4 @@ Carbon is a plugin which helps you to monitor environmental footprint of your as
    features
    installation
    configuration
+   recommendations
