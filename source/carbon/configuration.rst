@@ -56,9 +56,9 @@ It also has an automatic action to find the country designation for locations al
 
 To enable it, go to **Setup > Plugins**, locate the Carbon plugin, click on its wrench and check the box **Enable geocoding**.
 
-When the geocoding feature is disabled, it is advised to select the country field manually. This field is under the map and duplicates the native text field **Country** from GLPI.
+When the geocoding feature is disabled, it is advised to select the country field manually. In version 1.0.0 this field is under the map and duplicates the native text field **Country** from GLPI. In version 1.1.0 and later, go to the tab **Environnemental impact** and fill the dropdown **Boavizta zone**.
 
-.. image:: images/location_view.png
+.. image:: images/location_tab_environmental_impact_set_boavizta_zone.png
     :alt: view location information
     :scale: 36%
 
@@ -75,9 +75,11 @@ To do so, the plugin searches for the following dates on order of decreasing pre
 * **startup date** (Financial and administrative informations)
 * **delivery date** (Financial and administrative informations)
 * **date of purchase** (Financial and administrative informations)
-* **creation date in the inventory**
+* **creation date in the inventory** (in version 1.0.0 only)
 
 One of these date fields must be populated.
+
+.. note:: The creation date is ignored starting from verion 1.1.0, this means that one of the 3 other fields must be filled.
 
 .. image:: images/financial_information.png
     :alt: view financial information
@@ -85,7 +87,11 @@ One of these date fields must be populated.
 
 .. note:: Monitors rely on the location of the computer it is connected to, so there is no need to add it manually
 
-1. The plugin needs to know where is an asset to determine which carbon intensity is applied to its energy consumption. The associated location must have the field **Country** filled, in english language.
+1. The plugin needs to know where is an asset to determine which carbon intensity is applied to its energy consumption. In version 1.0.0 the associated location must have the field **Country** filled, in english language. In version 1.1.0 and later, the carbon intensity location is in the tab **Environmental impact**. The user must choose the source, then the zone (usually a country)
+
+.. image:: images/location_tab_environmental_impact_set_carbon_intensity_source.png
+    :alt: Setting the carbon intensity source of consumed electricity (version 1.1.0 and later)
+    :scale: 43%
 
 2. Each asset must be associated with a model so that the plugin can estimate CO2 emissions as closely as possible. This information can be pre-filled from a `template <https://glpi-user-documentation.readthedocs.io/fr/latest/modules/overview/templates.html>`_
 
