@@ -16,3 +16,4 @@ Carbon is a plugin which helps you to monitor environmental footprint of your as
    recommendations
    types_of_impact
    methodology
+   checking data

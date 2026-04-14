@@ -7,13 +7,21 @@ Automatic actions
 The plugin requires a working configuration of `automatic actions with CLI mode <https://glpi-user-documentation.readthedocs.io/fr/master/modules/configuration/crontasks.html>`_.
 Check carefully that GLPI scheduler is running every minute.
 
+Each asset has a tab where the user can see the calculated impacts or run their calculation. It is not necessary to run the calculation manually, except if the user wants to see immediate results. There is an automatic action, programmed once per day to run a batch of calculations.
+
 Downloading carbon intensitiy data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The plugin implements an automatic action for each data provider. Supported sources are :
 
 * **RTE** for France (free, data back to 2012-01-01)
-* **Electricity Map** for most countries and regions in the world (free access limited to last 24 hours)
+* **Electricity Maps** for most countries and regions in the world (free access limited to last 24 hours or full access with are supported)
+
+.. note::
+    RTE provides date for **produced** electricity only. As France imports and exports electricity the evaluation of **consumed** electricity is slighly different. When it is possible, prefer ElectricityMaps as it takes import / export into account.
+
+.. note::
+    Electricitymaps client supports free and paid access. As there is no way to distinguish these modes from API or the key, you must tick the checkbox "Free mode" if you are using the free access.
 
 When an automatic action runs for the first time it setups supported regions in database. Once done, you may activate downloads for regions of interest.
 
@@ -79,7 +87,7 @@ To do so, the plugin searches for the following dates on order of decreasing pre
 
 One of these date fields must be populated.
 
-.. note:: The creation date is ignored starting from verion 1.1.0, this means that one of the 3 other fields must be filled.
+.. note:: The creation date is ignored starting from version 1.1.0, this means that one of the 3 other fields must be filled.
 
 .. image:: images/financial_information.png
     :alt: view financial information

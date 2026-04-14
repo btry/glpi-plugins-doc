@@ -6,7 +6,7 @@ should refer to this page to easily find out which data is missing for a single 
 
 Mandatory informations are:
 
-*  A location with a country or a state filled
+*  A location with a carbon intensity source and zone
 *  A startup date or a delivery date
 *  A usage profile for computers
 *  A model or a type

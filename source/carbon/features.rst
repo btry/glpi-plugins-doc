@@ -26,5 +26,29 @@ the table below describes how assets are supported by the plugin.
 +-------------------+---------------+-----------+-----------+
 | Smartphone        |      Yes      |    Yes    |    No     |
 +-------------------+---------------+-----------+-----------+
+| Tablet            |      Yes      |    Yes    |    No     |
++-------------------+---------------+-----------+-----------+
 
-.. note:: RTE is free and ElectricityMaps but is very limitative in free version
+.. note:: RTE is free; ElectricityMaps is available with a subscription or with a very limitative free access
+
+Features changelog
+==================
+
+Version 1.0.0 (for GLPI 10) and 1.1.0 (for GLPI 11)
+---------------------------------------------------
+
+  Support for 3 impact criteria
+  * GWP (Global Warming Potential)
+  * ADP (Abiotic Depletion Potential) (embodied only)
+  * PE (Primary Energy) (embodied only)
+
+Version 1.1.1 (GLPI 11)
+-----------------------
+
+
+Version 1.2.0
+-------------
+
+* Supports up to 20 impact criteria
+* User defined impact values in asset models, taking precedence over 3rd party evaluation tools
+* Supports paid access to ElectricityMaps

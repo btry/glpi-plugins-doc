@@ -1,5 +1,5 @@
-Reading datas
-=============
+Reading data
+============
 
 In each asset, an Environmental impact tab is now visible.
 
@@ -21,14 +21,15 @@ You can (for computers) select the appropriate profile as well as the planned li
 Historization status
 --------------------
 
-The logging status tells you whether all requirements are correctly met, ensuring that the data sent by Carbon is as accurate as possible.
+The historization status tells you whether all requirements are correctly met, ensuring that the data sent by Carbon is as accurate as possible.
 
 .. image:: images/historization_status.png
     :alt: Read the historization status
     :scale: 61%
 
-If an item is in red, the plugin will operate in a degraded manner, providing less accurate, aggregated estimation information.
-Data in orange are optional items with a slight impact on data quality
+If an item is in red, the plugin will not be able to compute the usage greenhouse gas emissions of the asset.
+Data in orange are optional and missing items. They might degrade the quality of he results.
+Some items may work together. If all items of such group are missing then will show missing and required (red). If one of them is available, the others will show missing (orange).
 
 Usage
 -----
@@ -53,8 +54,7 @@ Using the toolbar at the top right, you can:
 Additional data, ``gSbeq``, is available.
 These are grams of antimony equivalent. This index is used to measure the depletion of abiotic resources (rare earths, minerals, etc.).
 
-You can reset and calculate this data with the corresponding buttons (There is an automatic action ``UsageImpact`` to set them if they are not already calculated.
-The buttons may be useful to update values after a change of an asset property.)
+You can reset and calculate this data with the corresponding buttons. The user don't need to launch teh calculations for every asset. An automatic action, executed daily, does the job. Use the buttons only to reset the calculations in order to recalculate results with up to date data, or ifyou need immediate results.
 
 Embodied data
 -------------

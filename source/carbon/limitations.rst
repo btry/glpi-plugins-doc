@@ -35,20 +35,7 @@ Therefore the time 2024-03-01 02:00:00 is not visible in the table of carbon int
 
 The reverse occurs on 2023-10-29 02:00:00 where there are two rows with the same date (visible when the table displayed with timezone Europe/Paris) but internally, there is an interval of 1H between them (visible when the table is displayed with UTC)
 
-Not used assets
----------------
-
-Computer
-^^^^^^^^
-
-When a computer is not used it is recommended to remove its usage profile.
-
-Monitor
-^^^^^^^
-
-If there are laptops in the inventory, their internal display may be inventoried. In this case, ensure that it has a model and a type without any power consumption set, or no type or model at all.
-
 Deleted asset
 -------------
 
-GLPI usually handles a trash for assets. A deleted asset will be ignored. When an asset enters or exists the trash then it will be respectively excluded or included in the environmental impact history calculation.
+GLPI usually handles a trash for assets. A deleted asset will be ignored. When an asset enters or exists the trash then it will be respectively excluded or included in the environmental impact history calculation. However, previously calculated impacts will be included in results available in the report or any dashboard which uses the widgets of the plugin.

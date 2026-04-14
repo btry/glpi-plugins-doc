@@ -1,14 +1,23 @@
 Install the Plugin
 ==================
 
+.. warning:: During the installation process, the plugin creates many rows of data. The installation from GUI takes time and may even hit the PHP script execution timeout on slow servers. It is recommended to install from CLI as it shows a progress bar ensuring that the process is alive.
+
+If the GUI installation does not complete before the PHP timeout (usually 30s), the administrator can run again the installation, either from GUI or CLI.
+
+.. image:: images/install-cli.png
+    :alt: Installation from CLI
+    :scale: 38%
+
 From the marketplace
 --------------------
 
-.. warning::
+-  Go to the marketplace. Download and install the plugin **Carbon**.
 
-   The plugin is not available in the marketplace yet.
+.. figure:: images/marketplace.png
+   :alt:
+   :scale: 100 %
 
-   You can install it manually from the archive.
 
 Manually
 --------
