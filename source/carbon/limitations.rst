@@ -12,9 +12,11 @@ The plugin can collect carbon intensity from several sources. The accuracy of th
 .. warning:: Electrcitymaps license keys. Some limitations may apply to free keys. With the free version, electricitymaps only provides intensity history for the last 24 hours.
 
 Locations (version <= 1.1.0)
----------
+----------------------------
 
 The plugin uses locations to find the appropriate electricity source. The field **Country** must be populated in english. It is expected to be solved soon.
+
+Note: in later versions, each location should be assigned zone for Boavizta, a carbon intensity source and a carbon intensity zone.
 
 Dates handling
 --------------

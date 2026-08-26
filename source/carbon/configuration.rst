@@ -78,7 +78,7 @@ All assets
 
 1. To calculate the emission of greenhouse gas related to energy consumed during use of your assets, the plugin needs to know when an asset is used for the first time and when its services is stopped.
 
-To do so, the plugin searches for the following dates on order of decreasing precedence:
+To do so, the plugin searches for the following dates on order of decreasing precedence, to find when the asset has been used for the first time:
 
 * **startup date** (Financial and administrative informations)
 * **delivery date** (Financial and administrative informations)
@@ -88,6 +88,8 @@ To do so, the plugin searches for the following dates on order of decreasing pre
 One of these date fields must be populated.
 
 .. note:: The creation date is ignored starting from version 1.1.0, this means that one of the 3 other fields must be filled.
+
+To determine when the asset is no longer in use, the plugin requires the **decommission date**. It is possible to set a date un the future, which can be considered as a planned decommission date.
 
 .. image:: images/financial_information.png
     :alt: view financial information
