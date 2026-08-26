@@ -8,4 +8,4 @@ The plugin downloads carbon intensity from one or several data sources. It may b
 
 .. image:: ../images/carbon-intensity-source-diag.png
     :alt: Example of data diagnosis
-    :scale: 90%
+    :width: 90%
