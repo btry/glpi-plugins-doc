@@ -22,7 +22,7 @@ the table below describes how assets are supported by the plugin.
 +-------------------+---------------+-----------+-----------+
 | Monitor           |      Yes      |    Yes    |    No     |
 +-------------------+---------------+-----------+-----------+
-| Network equipment |      No       |    Yes    |    No     |
+| Network equipment |   User data   |    Yes    |    No     |
 +-------------------+---------------+-----------+-----------+
 | Smartphone        |      Yes      |    Yes    |    No     |
 +-------------------+---------------+-----------+-----------+
@@ -52,3 +52,9 @@ Version 1.2.0
 * Supports up to 20 impact criteria
 * User defined impact values in asset models, taking precedence over 3rd party evaluation tools
 * Supports paid access to ElectricityMaps
+
+Version 1.3.0
+-------------
+
+* Per model user-defined impacts
+* Diagnosis of carbon intensitiy data in cron tasks (view of gaps)
