@@ -36,7 +36,7 @@ Usage
 
 A graph displays energy consumption and carbon emissions per month for the last complete 12 months.
 
-.. image:: images/usage.png
+.. image:: images/usage_impact.png
     :alt: Read the graph of energy consumption and carbon emissions per month
     :scale: 49%
 
